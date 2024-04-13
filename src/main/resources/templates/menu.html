@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="" th:href="@{/css/my.css}" />
+<title>Pizza Ordering System</title>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="pizza" id="pizza1">
+        <img th:src="@{/images/marg.jpg}" alt="Margherita Pizza">
+        <h2>Margherita Pizza</h2>
+        <select id="size1">
+            <option value="9.99">Small ($9.99)</option>
+            <option value="12.99">Medium ($12.99)</option>
+            <option value="14.50">Large ($14.50)</option>
+        </select>
+        <div class="toppings">
+            <input type="checkbox" id="topping1" value="1.50">
+            <label for="topping1">Pepperoni (+$1.50)</label><br>
+            <input type="checkbox" id="topping2" value="1.00">
+            <label for="topping2">Mushrooms (+$1.00)</label><br>
+            <input type="checkbox" id="topping3" value="0.75">
+            <label for="topping3">Onions (+$0.75)</label><br>
+        </div>
+        <div class="quantity">
+            <label for="quantity1">Quantity:</label>
+            <input type="number" id="quantity1" value="1" min="1" max="10">
+        </div>
+        <div class="actions">
+            <button onclick="addToCart('pizza1')">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="pizza" id="pizza2">
+        <img th:src="@{/images/pep.jpg}" alt="Pepperoni Pizza"/>
+        <h2>Pepperoni Pizza</h2>
+        <select id="size2">
+            <option value="10.99">Small ($10.99)</option>
+            <option value="13.99">Medium ($13.99)</option>
+            <option value="16.99">Large ($16.99)</option>
+        </select>
+        <div class="toppings">
+            <input type="checkbox" id="topping4" value="1.50">
+            <label for="topping4">Extra Cheese (+$1.50)</label><br>
+            <input type="checkbox" id="topping5" value="1.00">
+            <label for="topping5">Pepperoni (+$1.00)</label><br>
+            <input type="checkbox" id="topping6" value="0.75">
+            <label for="topping6">Bell Peppers (+$0.75)</label><br>
+        </div>
+        <div class="quantity">
+            <label for="quantity2">Quantity:</label>
+            <input type="number" id="quantity2" value="1" min="1" max="10">
+        </div>
+        <div class="actions">
+            <button onclick="addToCart('pizza2')">Add to Cart</button>
+        </div>
+	</div>	
+		
+		<div class="pizza" id="pizza3">
+		        <img th:src="@{/images/chicken.jpg}" alt="Chicken Pizza"/>
+		        <h2>Chicken Pizza</h2>
+		        <select id="size3">
+		            <option value="10.99">Small ($10.99)</option>
+		            <option value="11.99">Medium ($11.99)</option>
+		            <option value="14.99">Large ($14.99)</option>
+		        </select>
+		        <div class="toppings">
+		            <input type="checkbox" id="topping7" value="1.50">
+		            <label for="topping7">Extra Cheese (+$1.50)</label><br>
+		            <input type="checkbox" id="topping8" value="2.00">
+		            <label for="topping8">Chicken (+$2.00)</label><br>
+		            <input type="checkbox" id="topping9" value="0.75">
+		            <label for="topping9">Pineapple(+$0.75)</label><br>
+		        </div>
+		        <div class="quantity">
+		            <label for="quantity3">Quantity:</label>
+		            <input type="number" id="quantity3" value="1" min="1" max="10">
+		        </div>
+		        <div class="actions">
+		            <button onclick="addToCart('pizza3')">Add to Cart</button>
+		        </div>
+			</div>
+		
+				<div class="pizza" id="pizza4">
+						        <img th:src="@{/images/Farm.jpg}" alt="Garden Pizza"/>
+						        <h2>Garden Fresh Pizza</h2>
+						        <select id="size4">
+						            <option value="8.99">Small ($8.99)</option>
+						            <option value="10.89">Medium ($10.89)</option>
+						            <option value="12.50">Large ($12.50)</option>
+						        </select>
+						        <div class="toppings">
+						            <input type="checkbox" id="topping10" value="1.50">
+						            <label for="topping10">Extra Cheese (+$1.50)</label><br>
+						            <input type="checkbox" id="topping11" value="1.49">
+						            <label for="topping11">Extra two Toppings (+$1.49)</label><br>
+									<textarea for="topping11" placeholder="Enter toppings"></textarea><br>   
+						        </div>
+						        <div class="quantity">
+						            <label for="quantity4">Quantity:</label>
+						            <input type="number" id="quantity4" value="1" min="1" max="10">
+						        </div>
+						        <div class="actions">
+						            <button onclick="addToCart('pizza4')">Add to Cart</button>
+						        </div>	
+							</div>
+							
+							<div class="pizza" id="pizza5">
+								<img th:src="@{/images/meatjpg.jpg}" alt="Meats Pizza"/>
+								<h2>Meats Supreme</h2>
+								<select id="size5">
+					            <option value="12.99">Small ($12.99)</option>
+								<option value="14.89">Medium ($14.89)</option>
+								<option value="16.99">Large ($16.99)</option>
+								</select>
+								<div class="toppings">
+								<input type="checkbox" id="topping11" value="1.50">
+								<label for="topping11">Extra Cheese (+$1.50)</label><br>
+								<input type="checkbox" id="topping12" value="1.50">
+								<label for="topping12">Sreak (+$1.50)</label><br>
+								<input type="checkbox" id="topping13" value="1.50">
+								<label for="topping13">Beef (+$1.50)</label><br>   
+								</div>
+								<div class="quantity">
+								<label for="quantity5">Quantity:</label>
+								<input type="number" id="quantity5" value="1" min="1" max="10">
+								</div>
+								<div class="actions">
+								<button onclick="addToCart('pizza5')">Add to Cart</button>
+								</div>	
+							  </div>
+							  
+							  
+						<div class="pizza" id="pizza6">
+							  <img th:src="@{/images/1009.jpg}" alt="Special Pizza"/>
+							  <h2> Red&Cheese Special Pizza</h2>
+							  <select id="size6">
+							  <option value="17.99">Small ($17.99)</option>
+							  <option value="19.89">Medium ($19.89)</option>
+							  <option value="21.99">Large ($21.99)</option>
+							  </select>
+							  <div class="toppings">
+							  <input type="checkbox" id="topping14" value="1.50">
+							  <label for="topping14">Extra Cheese (+$1.50)</label><br>
+							  <input type="checkbox" id="topping15" value="2.50">
+							  <label for="topping15">MeatBalls (+$2.50)</label><br>
+							  <input type="checkbox" id="topping16" value="1.50">
+							  <label for="topping16">Shrimp (+$2.99)</label><br>   
+							  </div>
+							  <div class="quantity">
+							  <label for="quantity6">Quantity:</label>
+							  <input type="number" id="quantity6" value="1" min="1" max="10">
+							  </div>
+							  <div class="actions">
+							  <button onclick="addToCart('pizza6')">Add to Cart</button>
+							</div>	
+						</div>
+	
+</div>
+
+<table id="billTable" class="actions">
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Size</th>
+            <th>Toppings</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="billBody">
+    </tbody>
+</table>
+
+<div id="totalAmount">Total Amount: $<span>0.00</span></div>
+<div class="centered-button">
+	<button onclick="openCheckoutModal()">Checkout</button>
+</div>
+
+<div id="deliveryStatus">
+    <h2>Delivery Status</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Customer Name</th>
+                <th>Contact</th>
+                <th>Address</th>
+                <th>Items</th>
+                <th>Total Amount</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="deliveryStatusBody">
+        </tbody>
+    </table>
+</div>
+
+
+<!-- Checkout Modal -->
+<div id="checkoutModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeCheckoutModal()">&times;</span>
+        <h2>Enter Your Details</h2>
+        <input type="text" id="name" placeholder="Your Name" required><br>
+        <input type="number" id="contact" placeholder="Phone Number" required><br>
+        <textarea id="address" placeholder="Your Address" required></textarea><br>
+        <button onclick="processCheckout()">Confirm Order</button>
+    </div>
+</div>
+
+<script src="" th:src="@{/javascript/script.js}"></script>
+</body>
+</html>

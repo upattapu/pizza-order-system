@@ -1,0 +1,47 @@
+/* styles.css */
+
+header {
+    background-color: mediumvioletred;
+    padding: 1px;
+    text-align: center;
+}
+
+marquee {
+		background-color: yellow;
+		color: red;	
+	}
+	
+article {
+		position: fixed;
+	  	float: right;
+	  	top: 20%;
+	  	left: 50%;
+	   	  
+	}
+.actions {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+.actions button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        cursor: pointer;
+        
+    }
+
+.actions button:hover {
+        background-color: #45a049;
+    }
+	
+div {
+		background-color:skyblue; 
+		width:auto;
+	}
+img {
+	height: 450px;
+}	
+/* Other styles here */

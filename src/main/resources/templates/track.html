@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Ordering System</title>
+    <link rel="stylesheet" href="" th:href="@{/css/style.css}" />
+	
+</head>
+    <header>
+        <h1>Red & Cheese Pizza's</h1>
+    </header>
+	<marquee behavior="scroll" direction="left" scrollamount="5">
+			    Your order will be ready for pickup in 20 minutes.
+		</marquee>
+<img th:src="@{/images/logo.jpeg}" />
+
+<div action="track" method="get">
+    <article id="order-tracking">
+        <h2>Order Tracking</h2>
+        <label for="order-id">Enter Phone Number :</label>
+        <input type="text" id="order-id">
+		<span class="actions">		
+		<button id="track-order-btn">Track Order</button>
+		</span>
+        <div id="order-details"></div>
+    </article>
+	
+    <script src="" th:src="@{/javascript/sc.js}"></script>
+	</div>
+
+	
+	
+
+</html>
