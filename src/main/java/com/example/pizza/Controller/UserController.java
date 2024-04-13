@@ -33,5 +33,10 @@ public class UserController {
 	public String about() {
 		return "about";
 	}
+	
+	@GetMapping("/images")
+	public String images() {
+		return "port";
+	}
 
 }
